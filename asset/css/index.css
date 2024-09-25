@@ -1,0 +1,100 @@
+:root {
+    --border-radius-main: 10px;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: #ededed;
+    background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgoC0T2gVFCTeywviaiFVPxir3wqzmU6oxU7pDSV3dy3ltIE5nFjnCXIt5FWzoBjIBb9KbnUDPOz4mJVd-m0Pdl26dz5fx4ruY3jEQOqGs4u9gGlBE6lFYEccuhUasp_Foh8_IPe_C_VJrHJYauLoE4fKy2Va3qCDJxooDRx9ez4VcoTOMnwA40tS0QRg/s5472/IMG_0226.JPG');
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    place-content: center;
+}
+
+.wrapper {
+    height: 30vw;
+    width: 20vw;
+    box-shadow: 2px 2px 10px rgb(0, 0, 0);
+    border-radius: var(--border-radius-main);
+    backdrop-filter: blur(5px);
+    font-size: 3vh;
+    padding: 40px;
+    padding-top: 3vh;
+}
+
+.wrapper__title {
+    border-top-left-radius: var(--border-radius-main);
+    border-top-right-radius: var(--border-radius-main);
+    width: 100%;
+    height: 30%;
+    display: grid;
+    place-content: center;
+}
+
+.wrapper__title h1 {
+    font-size: 2em;
+}
+
+.wrapper__form {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 20%;
+
+    height: 10vh;
+    border-radius: 2%;
+}
+.wrapper__form *{
+    width: 100%;
+    border: none;
+    height: 60%;
+    border-radius: 5px;
+}
+.wrapper__form input[type="text"], .wrapper__form input[type="password"]{
+    padding: 10% 10%;
+    box-sizing: border-box;
+}
+.forgot{
+    font-weight: 550;
+    font-size: 0.7em;
+    height: 2%;
+    display: flex;
+    align-items: center;
+    margin-top: 2%;
+    margin-bottom: 7%;
+    box-sizing: border-box;
+    padding-left: 1%;
+    color: rgb(25, 200, 254);
+}
+.wrapper__form input[type="submit"]{
+    border-radius: 2px;
+    background-color: rgb(0, 200, 255);
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.form__register{
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 2px;
+    width: 100%;
+    margin-top: 5%;
+}
+.form__register a{
+    display: inline;
+}
+.register__title{
+    color: black;
+    font-weight: 550;
+    font-size: 0.7em;
+}
+.register__Signup{
+    text-decoration: none;
+    color: rgb(0, 200, 255);
+    font-weight: 550;
+    font-size: 0.7em;
+}
