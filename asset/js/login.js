@@ -17,27 +17,30 @@ const firebaseConfig = {
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
-console.log(app);
-const email = document.getElementById('email').value;
-const password = document.getElementById('password').value;
+const email_element= document.getElementById('email');
+const password_element = document.getElementById('password');
 const auth = getAuth(app);
 
 const submit = document.getElementById('submit');
 submit.addEventListener('click', function (event) {
 
-
+    var email = email_element.value;
+    var password = password_element.value
+    console.log(email);
+    console.log(password);
     event.preventDefault();
-
 
     signInWithEmailAndPassword(auth, email, password)
       .then((userCredential) => {
         // Signed in 
         const user = userCredential.user;
         // ...
+        console.log(user);
       })
       .catch((error) => {
         const errorCode = error.code;
         const errorMessage = error.message;
+        console.log(errorMessage);
       });
     
 
