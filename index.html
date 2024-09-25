@@ -17,16 +17,16 @@
             <h1>Đăng nhập</h1>
         </div>
         <form class="wrapper__form">
-            <input class="inputs__user" type="text" id="user" placeholder="Email">
+            <input class="inputs__user" type="text" id="email" placeholder="Email">
             <input class="inputs__password" type="password" id="password" placeholder="Password">
             <a class="forgot">Forgot password</a>
-            <input type="submit" value="Log in">
+            <input type="submit" id="submit" value="Log in">
             <a class="register__title">Don't have an account?</a>
         </form>
     </div>
 
-    <script src="asset/js/firebase.js"></script>
-    <script src="asset/js/login.js"></script>
+    <script type="module" src="asset/js/firebase.js" defer></script>
+    <script type="module" src="asset/js/login.js" defer></script>
 </body>
 
 </html>
